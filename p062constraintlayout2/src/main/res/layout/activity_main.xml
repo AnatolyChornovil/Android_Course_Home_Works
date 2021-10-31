@@ -26,7 +26,7 @@
         app:layout_constraintBottom_toTopOf="@+id/divider1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="20dp"
-        app:srcCompat="@drawable/smallImg" />
+        app:srcCompat="@drawable/smallimg" />
 
     <View
         android:id="@+id/divider1"
@@ -185,7 +185,7 @@
         app:layout_constraintTop_toBottomOf="@id/fromAge"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="28dp"
-         />
+        />
 
     <TextView
         android:id="@+id/ageMm"
@@ -198,7 +198,7 @@
         app:layout_constraintTop_toBottomOf="@id/fromAge"
         app:layout_constraintLeft_toRightOf="@id/ageMs"
         android:layout_marginLeft="15dp"
-         />
+        />
 
     <TextView
         android:id="@+id/psh"
@@ -225,7 +225,5 @@
         android:text="The Best in Che Saloon for Free People"
         android:textSize="18dp"
         android:textColor="@color/white"/>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

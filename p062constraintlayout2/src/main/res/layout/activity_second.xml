@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/mainImg"
         android:layout_marginTop="100dp"
         android:layout_marginLeft="40dp"
-               />
+        />
 
     <TextView
         android:id="@+id/firstNmbr"
@@ -154,10 +154,4 @@
         android:text="regular client"
         android:textSize="18dp"
         android:textColor="@color/white"/>
-
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
