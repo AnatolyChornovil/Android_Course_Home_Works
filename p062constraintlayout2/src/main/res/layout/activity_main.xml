@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:srcCompat="@drawable/wall"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/smallImage"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/smallimg" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintTop_toBottomOf="@id/mainImage"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+
+    <TextView
+        android:id="@+id/SaloonTsxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Saloon FRAU MADAMME"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider1"
+        app:layout_constraintLeft_toRightOf="@id/smallImage"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/waitTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="waiting for visitors"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/smallImage"
+        app:layout_constraintLeft_toRightOf="@id/smallImage" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/waitTxt"
+        app:layout_constraintLeft_toRightOf="@id/waitTxt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_baseline_attach_money_24"
+        tools:layout_editor_absoluteX="354dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="SUBMISSIVE"
+        app:layout_constraintBottom_toTopOf="@+id/divider1"
+        app:layout_constraintEnd_toStartOf="@+id/domBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smallImage" />
+
+    <Button
+        android:id="@+id/domBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="DOMINATION"
+        app:layout_constraintBottom_toTopOf="@+id/divider1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/subBtn"
+        app:layout_constraintTop_toBottomOf="@+id/smallImage" />
+
+    <TextView
+        android:id="@+id/fromAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cirkle"
+        android:gravity="center"
+        android:text="22"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintEnd_toStartOf="@+id/toAge"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/toAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cirkle"
+        android:gravity="center"
+        android:text="44"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintEnd_toStartOf="@+id/light"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fromAge"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cirkle"
+        android:gravity="center"
+        android:text="LIGHT"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintEnd_toStartOf="@+id/hard"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/toAge"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cirkle"
+        android:gravity="center"
+        android:text="HARD"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/light"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/ageMs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="age Miss"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintTop_toBottomOf="@id/fromAge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="28dp"
+        />
+
+    <TextView
+        android:id="@+id/ageMm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="age Moms"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintTop_toBottomOf="@id/fromAge"
+        app:layout_constraintLeft_toRightOf="@id/ageMs"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/psh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pressure"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintTop_toBottomOf="@id/fromAge"
+        app:layout_constraintLeft_toRightOf="@id/ageMm"
+        android:layout_marginLeft="68dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="180dp"
+        android:lines = "2"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/divider2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="The Best in Che Saloon for Free People"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
